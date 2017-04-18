@@ -5,6 +5,8 @@ html, body {
 
 }
 
+/*  Containers */
+
 .container {
   max-width: 1040px;
   margin: 0 auto;
@@ -16,14 +18,15 @@ html, body {
 }
 
 .container-test {
-	max-width: 1100px;
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 
 /* Header*/
 
 .header {
-	background: url("../img/ny.jpg") no-repeat center center;
+	background: url("../img/ny.jpg") no-repeat center center fixed;
 	background-size: cover;
 	height: 600px;
 }
@@ -39,6 +42,7 @@ html, body {
 
 .header .container-fluid .pull-right ul a li.images {
 	padding: 0 !important;
+	border: none !important;
 }
 
 .header .container-fluid .pull-right ul a li {
@@ -46,15 +50,17 @@ html, body {
 	display: inline-block;
 	margin-top: 7px;
 	color: white;
-	margin-left: 12px;
-	padding: 5px 4px;
+	margin-left: 14px;
+	padding: 2px 2px;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
 }
 
 .header .container-fluid .pull-right ul a:hover li {
-	background-color: rgb(145, 147, 149);
-	color: white;
 	transition: 0.5s;
-	border-radius: 5px;
+	border-bottom: 1px solid rgba(255,255,255,0.8);
 }
 
 .header .container-fluid .pull-right ul a li img {
@@ -70,14 +76,14 @@ html, body {
 	text-decoration: none;
 }
 
-.header .row .col-md-5 {
+.header .row .container-test .col-md-5 {
 	margin-top: 45px;
 }
 
-.header .row .col-md-5 h1 {
+.header .row .container-test .col-md-5 h1 {
 	color: rgb(34, 18, 73);
 	font-size: 50px;
-	margin-left: 40px;
+	margin-left: 100px;
 }
 
 /* main */
@@ -87,14 +93,14 @@ html, body {
 }
 .main .container-fluid {
 	background-color: rgba(0,0,0,0.5);
-	height: 80px;
+	height: 60px;
 }
 
 .main .container-fluid h3 {
-	line-height: 40px;
 	text-transform: uppercase;
 	color: white;
 	vertical-align: middle;
+	margin-top: 15px;
 }
 
 /* ptf */
@@ -102,15 +108,196 @@ html, body {
 .ptf {
 	background: url("../img/sky.jpg") repeat center center;
 	background-size: cover;
-
 }
 .ptf .container .row a img {
 	margin-bottom: 20px;
-
-
 }
 
 .ptf .container .row {
 	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/* Languages */
+
+.languages {
+	background: url("../img/sky.jpg") repeat center center;
+	background-size: cover;
+}
+
+.languages .img-languages {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.languages .container img {
+	height: 70px;
+	margin: 10px auto 10px auto;
+}
+
+/* About */
+
+.about {
+	margin-top: 40px;
+
+}
+
+.about .container .col-md-4 h4 i, .about .container .col-md-4 h4 span {
+	font-size: 28px;
+} 
+
+.about .container .col-md-4 span {
+	animation-duration: 600ms;
+	animation-name: blink;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.about .container .col-md-7 h4 i, .about .container .col-md-7 h4 span {
+	font-size: 24px;
+} 
+
+.about .container .col-md-7 span {
+	animation-duration: 600ms;
+	animation-name: blink;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes blink {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+.about .container h4.first {
+	margin-bottom: 30px;
+}
+
+.about .container h4, .about .container p {
+	color: white;
+}
+
+.about .container h4, .about .container p {
+	margin-bottom: 20px;
+}
+
+.about .container .col-md-7 {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.about .container .col-md-4 {
+	background-color: rgba(0,0,0,0.5);
+	margin-bottom: 50px;
+}
+
+
+/* form */
+
+.languages .about .container label {
+	color: white;
+	margin-top: 15px;
+}
+
+.languages .about .container label.last {
+	margin-top: 40px;
+}
+
+.languages .about .container input {
+	margin-top: 12px;
+	border-radius: 0;
+	border: 1px solid transparent;
+	background: url("../img/sky.jpg") repeat center center;
+	background-size: cover;
+
+}
+
+.languages .about .container input.btn {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 0 !important;
+	color: white;
+	background-image: none !important;
+	border-bottom: 1px solid white;
+}
+
+.languages .about .container input.last:hover {
+	background-image: none;
+	border-radius: 0;
+	border: 1px solid white;
+	transition: 0.7s;
+	color: white;
+}
+
+.languages .about .container textarea {
+	background: url("../img/sky.jpg") repeat center center;
+	background-size: cover;
+	border-radius: 0;
+	margin-top: 15px;
+	border: 1px solid transparent;
+}
+
+.languages .about .container input:focus {
+	box-shadow: none;
+}
+
+.languages .about .container textarea:focus {
+	box-shadow: none;
+}
+
+.about .container .col-md-7 img {
+	float: right;
+	margin-top: 10;
+	margin-right: 10;
+	height: 80px;
+	width: 80px;
+}
+
+/* footer */
+
+.footer {
+	height: 100px;
+	background-color: black;
+}
+
+.footer .container .pull-left ul a {
+	text-decoration: none;
+}
+
+.footer .container .pull-left ul a li {
+	list-style: none;
+	display: inline-block;
+}
+
+.footer .container .pull-left ul a li i {
+	color: white;
+	margin-top: 30px;
+	font-size: 30px;
+	margin-right: 15px;
+	padding: 2px 2px;
+}
+
+.footer .container .pull-left ul a:hover li i {
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.footer .container .pull-right p {
+	line-height: 90px;
+	vertical-align: middle;
+}
+
+.footer .container .pull-right p a {
+	text-decoration: none;
+	color: white;
+}
+
+.footer .container .pull-right p a:hover {
+	border-bottom: 1px solid white;
+	transition: 0.5s;
 }
 
