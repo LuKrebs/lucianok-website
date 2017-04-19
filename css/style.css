@@ -221,14 +221,17 @@ html, body {
 	border-radius: 0 !important;
 	color: white;
 	background-image: none !important;
-	border-bottom: 1px solid white;
+	border-bottom: 1px dashed white;
+	border-left: 1px dashed white;
+	border-right: 1px dashed white;
+	border-top: 1px dashed white;
 }
 
 .languages .about .container input.last:hover {
 	background-image: none;
 	border-radius: 0;
-	border: 1px solid white;
-	transition: 0.7s;
+	border: 2px solid white;
+	
 	color: white;
 }
 
