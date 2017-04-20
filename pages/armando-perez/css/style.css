@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre  Baskerville', sans-serif; 
+}
+
+body {
+  background: url("../img/brand.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1096px;
+}
+
+.header .container .pull-right {
+  margin-right: 10px;
+}
+
+.header .container .pull-right ul li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 45px;
+}
+
+.header .container h1 {
+  color: white;
+  margin-left: 0;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+
+.header .container .row .pull-right ul li a {
+  text-decoration: none;
+  color: #F01251;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.header .container .row .pull-right ul li a.active {
+  color: white;
+  background-color: #F01251;
+  padding: 10px 40px 10px 40px;
+}
+
+.header .container .row .pull-right ul li a.active:hover {
+  color: white;
+  background-color: rgba(240,18,81,0.8);
+}
+
+.header .container .row .pull-right ul li a:hover {
+    color: #F01251;
+    background-color: #EEEEEE;
+}
+
+/* Main section*/ 
+
+.main .container img {
+  margin-top: 20px;
+}
+
+/* Footer section*/
+.footer {
+  height: 120px;
+  line-height: 120px;
+
+}
+
+.footer .container ul {
+  margin-left: -30px;
+}
+
+.footer .container ul li {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer .container ul a {
+  color: black;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 20px;
+  padding: 5px 10px;
+} 
+
+.footer .container ul a:hover {
+  padding: 5px 10px;
+  background-color: black;
+  color: #EEEEEE;
+}
+
+.footer .container .pull-right {
+  margin-right: 20px; 
+ }
