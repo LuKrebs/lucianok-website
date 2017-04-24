@@ -1,41 +1,46 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
+    <link rel="icon" href="img/fav.ico" type="image/x-icon">
+    <title>Luciano Krebs</title>
   </head>
   <body>
 
-    <div class="header">
+    <div class="header" id="header-flag">
       <div class="container-fluid">
         <div class="pull-left">
           <a href="#"><h4>Luciano Krebs</h4></a>
         </div>
         <div class="pull-right">
           <ul>
-            <a href="#"><li class="pgs">Portfolio</li></a>
-            <a href="#"><li class="pgs">About me</li></a>
-            <a href="#"><li class="pgs">Contact</li></a>
-            <a href="#"><li class="images"><img src="img/br.png"></li></a>
-            <a href="#"><li class="last images"><img src="img/uk.png"></li></a>
+            <a href="#port" id="portfolio"><li class="pgs">Portfolio</li></a>
+            <a href="#about" id="aboutme"><li class="pgs">About me</li></a>
+            <a href="#about" id="contact"><li class="pgs">Contact</li></a>
+            <a href="#header-flag" id="brazil" onclick="changeToBr()"><li class="first images"><img src="img/br.png"></li></a>
+            <a href="#header-flag" id="english" onclick="changeToEn()"><li class="last images"><img src="img/uk.png"></li></a>
           </ul>
         </div>
       </div>
       <div class="row">
         <div class="container-test">
           <div class="col-md-5">
-            <h1 class="text-left"> Passion.</h1>
-            <h1 class="text-left"> Hard work.</h1>
-            <h1 class="text-left"> Development.</h1>
+            <h1 class="text-left" id="passion"> Passion.</h1>
+            <h1 class="text-left" id="hard-work"> Hard work.</h1>
+            <h1 class="text-left" id="development"> Development.</h1>
           </div>
         </div>
       </div>
     </div> <!--end: header --> 
 
-    <div class="main" id="portfolio">
+    <div class="main" id="port">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -43,132 +48,183 @@
           </div>
         </div>
       </div>
-    </div> <!--end: portfolio --> 
+    </div> <!--end: main --> 
 
     <div class="ptf">
-      <div class="container">
+      <div class="container-two">
         <div class="row">
-          <div class="col-md-4">
-            <a href="pages/adoptly-website/index.html" ><img src="pages/adoptly-website/adoptly.png" class="img-responsive"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/adoptly/adoptly.html" ><img src="pages/adoptly/img/adoptly.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
             <a href="pages/armando-perez/armando-perez.html"><img src="pages/armando-perez/img/armando-perez.png" class="img-responsive"></a>
-            <a href="pages/bass-website/index.html"><img src="pages/bass-website/bass.png" class="img-responsive"></a>
-            <a href="pages/bestbite-website/index.html"><img src="pages/bestbite-website/bestbite.png" class="img-responsive"></a>
-            <a href="pages/bolt-network-website/index.html"><img src="pages/bolt-network-website/bolt.png" class="img-responsive"></a>
           </div>
-          <div class="col-md-4">
-            <a href="pages/broadway-website/index.html"><img src="pages/broadway-website/broadway.png" class="img-responsive"></a>
-            <a href="pages/excursion/excursion.html"><img src="pages/excursion/img/excursion.png" class="img-responsive"></a>
-            <a href="pages/headlines-website/index.html"><img src="pages/headlines-website/headlines.png" class="img-responsive"></a>
-            <a href="pages/innovation-cloud-website/index.html"><img src="pages/innovation-cloud-website/innovation-cloud.png" class="img-responsive"></a>
-            <a href="pages/meet-junction-website/index.html"><img src="pages/meet-junction-website/meet-junction.png" class="img-responsive"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/bass/bass.html"><img src="pages/bass/img/bass.png" class="img-responsive"></a>
           </div>
-          <div class="col-md-4">
-            <a href="pages/move-website/index.html"><img src="pages/move-website/move.png" class="img-responsive"></a>
-            <a href="pages/newsroom-website/index.html"><img src="pages/newsroom-website/newsroom.png" class="img-responsive"></a>
-            <a href="pages/pocketbook-website/index.html"><img src="pages/pocketbook-website/pocketbook.png" class="img-responsive"></a>
-            <a href="pages/red-eye-photography-website/index.html"><img src="pages/red-eye-photography-website/red-eye-photography.png" class="img-responsive"></a>
-            <a href="pages/shutterbugg/shutterbugg.html"><img src="pages/shutterbugg/img/shutterbugg.png" class="img-responsive"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/bestbite/bestbite.html"><img src="pages/bestbite/img/bestbite.png" class="img-responsive"></a>
           </div>
         </div>
-      </div>
-    </div> <!--end: ptf --> 
+        <div class="row">
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/bolt-network/bolt-network.html"><img src="pages/bolt-network/img/bolt.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/ayrton-senna/ayrton-senna.html"><img src="pages/ayrton-senna//img/ayrton-senna.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/random-quote-machine/random-quote-machine.html"><img src="pages/random-quote-machine/img/rquote.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/broadway/broadway.html"><img src="pages/broadway/img/broadway.png" class="img-responsive"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/excursion/excursion.html"><img src="pages/excursion/img/excursion.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/headlines/headlines.html"><img src="pages/headlines/img/headlines.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/innovation-cloud/innovation-cloud.html"><img src="pages/innovation-cloud/img/innovation-cloud.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/meet-junction/meet-junction.html"><img src="pages/meet-junction/img/meet-junction.png" class="img-responsive"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/move/move.html"><img src="pages/move/img/move.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/newsroom/newsroom.html"><img src="pages/newsroom/img/newsroom.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/pocketbook/pocketbook.html"><img src="pages/pocketbook/img/pocketbook.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="pages/red-eye-photography/red-eye-photograpy.html"><img src="pages/red-eye-photography/img/red-eye-photography.png" class="img-responsive"></a>
+          </div>
+        </div>
+        <div class="row last">
+          <div class="col-md-3 col-md-offset-3 col-xs-3 col-xs-offset-3">
+            <a href="pages/shutterbugg/shutterbugg.html"><img src="pages/shutterbugg/img/shutterbugg.png" class="img-responsive"></a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="http://unipecaspg.com.br" target="_blank"><img src="img/unipecaspg.png" class="img-responsive"></a>
+          </div>
+        </div>
+      </div> <!--end: container-two -->
+    </div> <!--end: ptf -->
+
 
     <div class="languages">
 
       <div class="img-languages">
         <div class="container">
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-3 col-xs-3">
               <img src="img/rb.png" class="img-responsive">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3 col-xs-3">
               <img src="img/rails.png" class="img-responsive">
             </div>
-            <div class="col-md-2">
-              <img src="img/html.png" class="img-responsive">
+            <div class="col-md-3 col-xs-3">
+              <img src="img/sql.png" class="img-responsive">
             </div>
-            <div class="col-md-2">
-              <img src="img/css.png" class="img-responsive">
-            </div>
-            <div class="col-md-2">
-              <img src="img/js.png" class="img-responsive">
-            </div>
-            <div class="col-md-2">
-              <img src="img/bootstrap.png" class="img-responsive">
+            <div class="col-md-3 col-xs-3">
+              <img src="img/git.png" class="img-responsive">
             </div>
           </div>
         </div>        
       </div> <!--end: img-languages -->
 
       <div class="img-languages">
-        <div class="container text-center">
+        <div class="container">
           <div class="row">
-            <div class="col-md-2">
-              <img src="img/git.png" class="img-responsive">
-            </div>
-            <div class="col-md-2">
+            <div class="col-md-3 col-xs-3">
               <img src="img/sass.svg" class="img-responsive">
             </div>
-            <div class="col-md-2">
-              <img src="img/python.png" class="img-responsive">
+            <div class="col-md-3 col-xs-3">
+              <img src="img/css.png" class="img-responsive">
             </div>
-            <div class="col-md-2">
-              <img src="img/sql.png" class="img-responsive">
+            <div class="col-md-3 col-xs-3">
+              <img src="img/html.png" class="img-responsive">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3 col-xs-3">
               <img src="img/jquery.png" class="img-responsive">
-            </div>
-            <div class="col-md-2">
-              <img src="img/angular.png" class="img-responsive">
             </div>
           </div>
         </div>        
       </div> <!--end: img-languages --> 
 
-      <div class="about">
+      <div class="img-languages">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-3">
+              <img src="img/python.png" class="img-responsive">
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <img src="img/js.png" class="img-responsive">
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <img src="img/bootstrap.png" class="img-responsive">
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <img src="img/angular.png" class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about" id="about">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <h4 class="text-justify first"><i class="fa fa-angle-right" aria-hidden="true"></i><span>_ </span>Hi, I'm Luciano Krebs.</h4>
-              <p class="text-justify">I'm glad you are here. I'm a 22 year-old brazilian guy that really love Web Development.</p> 
-              <p class="text-justify">I created this page just to expose some work I've done. The languages I like to use are some of the above. </p>
-              <p class="text-justify"> If your desire is to create something new, but you don't have a clear idea about where you should start, please, let me know. I would love to hear what you think and help you develop it.</p>
+              <h4 class="text-justify first" id="luciano"><i class="fa fa-angle-right" aria-hidden="true"></i><span>_ </span>Hi, I'm Luciano Krebs.</h4>
+              <p class="text-justify" id="p1">I'm glad you are here. I'm a 22 year-old brazilian guy that really love Web Development.</p> 
+              <p class="text-justify" id="p2">I created this page just to expose some work I've done. The languages I like to use are some of the above. </p>
+              <p class="text-justify" id="p3"> If your desire is to create something new, but you don't have a clear idea about where you should start, please, let me know. I would love to hear what you think and help you develop it.</p>
             </div> <!--end: col-md-4 -->
 
             <div class="col-md-7 col-md-offset-1 text-center">
-              <img src="img/lu2.jpg" class="img-circle">    
-              <h4 class="text-left"><i class="fa fa-angle-right" aria-hidden="true"></i><span>_ </span>Let me know if I can help you:</h4>
+              <img src="img/lu2.jpg" class="pic img-circle" id="luphoto">    
+              <h4 class="text-left" id="let-me-know"><i class="fa fa-angle-right" aria-hidden="true"></i><span>_ </span>Let me know if I can help you:</h4>
               
               <form action="https://formspree.io/luciano.krebs@hotmail.com" method="POST">
                 <div class="row">
                   <div class="col-xs-3">
-                    <label class="control-label first">Name</label>
+                    <label class="control-label first" id="l1">Name</label>
                   </div>
                   <div class="col-xs-6">
                     <input type="text" class="col-sm-5 form-control first" name="name">
                   </div>      
                 </div>
-                <div class="row">
+                <div class="row segunda">
                   <div class="col-xs-3">
                     <label class="control-label">Email</label>
                   </div>
                   <div class="col-xs-6">
-                    <input type="email" class="form-control" name="email">
+                    <input type="email" class="form-control" name="email" required>
                   </div> 
                 </div>
                 <div class="row">
                   <div class="col-xs-3">
-                    <label class="control-label text-center last"> So...?</label>
+                    <label class="control-label text-center last" id="l3"> So...?</label>
                   </div>
                   <div class="col-xs-9">
-                    <textarea class="form-control" rows="3" name="message"></textarea>
+                    <textarea class="form-control" rows="3" name="message" required></textarea>
                   </div>
                 </div>
                 <div class="row">
-                  <input type="submit" value="Send" class="btn last">  
+                  <input type="submit" value="Send" class="btn last" id="botao">
+                  <a class="flag" href="#about" onclick="changeToEn()"><img src="img/uk.png" class=flag></a>
+                  <a class="flag" href="#about" onclick="changeToBr()"><img src="img/br.png" class=flag></a>
                 </div>
               </form> <!--end: form -->
-            
+
             </div> <!--end: col-md-7 --> 
         
           </div> <!--end: row-->  
@@ -178,20 +234,91 @@
 
     <div class="footer">
       <div class="container">
-        <div class="pull-left">
-          <ul>
-            <a href="https://www.facebook.com/luciano.krebsamaralarruda"><li><i class="fa fa-facebook-square" aria-hidden="true"></i></li></a>
-            <a href="http://codepen.io/LuKrebs/"><li><i class="fa fa-codepen" aria-hidden="true"></i></li></a>
-            <a href="https://github.com/LuKrebs"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-            <a href="#"><li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li></a>
-            <a href="https://www.linkedin.com/in/luciano-krebs-70a934113/"><li></li></a>
-          </ul>
-        </div>
-        <div class="pull-right">
-          <p><i class="fa fa-copyright" aria-hidden="true"></i> powered by <a href="https://about.me/lucianokrebs">Luciano Krebs</a></p>
+        <div class="row">
+          <div class="col-md-6 col-xs-6">
+            <div class="pull-left">
+              <ul>
+                <a href="https://www.facebook.com/luciano.krebsamaralarruda" target="_blank"><li><i class="fa fa-facebook-square" aria-hidden="true"></i></li></a>
+                <a href="http://codepen.io/LuKrebs/" target="_blank"><li><i class="fa fa-codepen" aria-hidden="true"></i></li></a>
+                <a href="https://github.com/LuKrebs" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
+                <a href="https://www.linkedin.com/in/luciano-krebs-70a934113/" target="_blank"><li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li></a>
+                <a href="https://www.linkedin.com/in/luciano-krebs-70a934113/" target="_blank"><li></li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <div class="pull-right">
+              <p id='footer-text'><i class="fa fa-copyright" aria-hidden="true"></i> powered by <a href="https://about.me/lucianokrebs" target="_blank">Luciano Krebs</a></p>
+            </div>
+          </div>
         </div>
       </div> <!--end: container -->
     </div> <!--end: footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      function changeToBr() {
+        var a = "Paixão.";
+        var b = "Trabalho duro.";
+        var c = "Desenvolvimento.";
+        var d = "Sobre mim";
+        var e = "Contato";
+        var f = "<i class='fa fa-angle-right' aria-hidden='true'></i><span>_ </span>Olá, eu sou Luciano Krebs.";
+        var g = "<i class='fa fa-angle-right' aria-hidden='true'></i><span>_ </span>Como posso te ajudar?:";
+        var h = "Estou muito grato por você estar aqui. Eu tenho 22 anos e sou apaixonado por Desenvolvimento Web.";
+        var i = "Eu criei essa página com o propósito de expor alguns dos trabalhos que eu já fiz. As linguagens de programção que eu gosto de usar são algumas dessas aqui em cima.";
+        var j = "Se  você deseja criar algo novo, mas não tem uma ideia muito clara por onde começar, por favor, fique a vontade pra entrar em contato comigo. Eu vou amar ouvir o que você tem a dizer e te ajudar a desenvolver."
+        var k = "Nome";
+        var m = "Então...? ";
+        var n = "Enviar";
+        var o = '<i class="fa fa-copyright" aria-hidden="true"></i> Desenvolvido por <a href="https://about.me/lucianokrebs" target="_blank">Luciano Krebs</a>';
+        document.getElementById('passion').innerHTML = a;
+        document.getElementById('hard-work').innerHTML = b;
+        document.getElementById('development').innerHTML = c;
+        document.getElementById('aboutme').innerHTML = d;
+        document.getElementById('contact').innerHTML = e;
+        document.getElementById('luciano').innerHTML = f;
+        document.getElementById('let-me-know').innerHTML = g;
+        document.getElementById('p1').innerHTML = h;
+        document.getElementById('p2').innerHTML = i;
+        document.getElementById('p3').innerHTML = j;
+        document.getElementById('l1').innerHTML = k;
+        document.getElementById('l3').innerHTML = m;
+        document.getElementById('botao').value = n;
+        document.getElementById('footer-text').innerHTML = o;
+      }
+
+      function changeToEn() {
+        var a = "Passion.";
+        var b = "Hard work.";
+        var c = "Development.";
+        var d = "About me";
+        var e = "Contact";
+        var f = "<i class='fa fa-angle-right' aria-hidden='true'></i><span>_ </span>Hi, I'm Luciano Krebs.";
+        var g = '<i class="fa fa-angle-right" aria-hidden="true"></i><span>_ </span>Let me know if I can help you:'
+        var h = "I'm glad you are here. I'm a 22 year-old brazilian guy that really love Web Development."
+        var i = "I created this page just to expose some work I've done. The languages I like to use are some of the above.";
+        var j = "If your desire is to create something new, but you don't have a clear idea about where you should start, please, let me know. I would love to hear what you think and help you develop it.";
+        var k = "Name";
+        var m = "So...? ";
+        var n = "Send";
+        var o = '<i class="fa fa-copyright" aria-hidden="true"></i> powered by <a href="https://about.me/lucianokrebs" target="_blank">Luciano Krebs</a>';
+        document.getElementById('passion').innerHTML = a;
+        document.getElementById('hard-work').innerHTML = b;
+        document.getElementById('development').innerHTML = c;
+        document.getElementById('aboutme').innerHTML = d;
+        document.getElementById('contact').innerHTML = e;
+        document.getElementById('luciano').innerHTML = f;
+        document.getElementById('let-me-know').innerHTML = g;
+        document.getElementById('p1').innerHTML = h;
+        document.getElementById('p2').innerHTML = i;
+        document.getElementById('p3').innerHTML = j;
+        document.getElementById('l1').innerHTML = k;
+        document.getElementById('l3').innerHTML = m;
+        document.getElementById('botao').value = n;
+        document.getElementById('footer-text').innerHTML = o;
+      }
+    </script>
 
   </body>
 </html>

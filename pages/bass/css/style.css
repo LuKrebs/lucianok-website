@@ -1,0 +1,224 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 970px;
+}
+
+/*  return button */
+a .return {
+  position: fixed;
+  width: 70px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 30%;
+  color: white;
+  background-color: rgb(34,18,73);
+  text-align: center;
+  border-radius: 5px; 
+  transition: 0.6s;
+}
+
+a .return  {
+  text-decoration: none;
+  color: white;
+}
+
+a .return p {
+  margin-top: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+}
+
+a .return:hover {
+  background-color: white;
+  color: rgb(34,18,73);
+}
+
+a .return:hover p span{
+  border-bottom: 1px solid rgba(34,18,73);
+  box-sizing: border-box;
+}
+
+/* finish return */
+
+/*Jumbotron*/
+
+.jumbotron {
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+.jumbotron img {
+  width: 100px;
+  height: 100px;
+}
+
+.jumbotron .header a {
+  float: right;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.jumbotron .header a.butt2 {
+  background-color: #FF003D;
+  padding: 7px 30px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.jumbotron .header a.butt2:hover {
+  color: black;
+}
+
+.jumbotron .header a.butt:hover {
+  border-bottom: 1px solid white;
+}
+
+/*Main*/
+.main h1, .main p {
+  color: white;
+}
+
+.main h1 {
+  margin-top: 70px;
+}
+
+.main p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*supporting-1*/
+
+.supporting-1 {
+  background-color: #161718;
+  margin-top: -30px;
+}
+
+.supporting-1 img {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.supporting-1 h2 {
+  margin-top: 130px;
+  color: #FFFFFF;
+}
+
+.supporting-1 p {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+/*supporting-2*/
+
+.supporting-2 {
+  background-color: black;
+}
+
+.supporting-2 h2 {
+  margin-top: 80px;
+  color: #FFFFFF;
+}
+.supporting-2 p {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.supporting-2 img {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+/*supporting-3*/
+.supporting-3 {
+  background-color: #161718;
+}
+
+.supporting-3 h2, .supporting-3 p {
+  color: white;
+  margin-left: -10px;
+}
+
+.supporting-3 p {
+  font-weight: 500;
+
+}
+
+.supporting-3 h2 {
+  margin-top: 80px;
+}
+
+.supporting-3 img {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/*Supporting-4*/
+.supporting-4 {
+  background: url("../img/feature.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.supporting-4 .container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+}
+
+.supporting-4 .container a.first {
+  margin-right: 5px;
+}
+
+.supporting-4 .container a.second {
+  margin-left: 5px;
+}
+
+
+.supporting-4 .container h2 {
+  color: white;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: black;
+}
+
+.footer .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer .container ul li {
+  list-style-type: none;
+  margin: 10px 0 10px -40px;
+}
+
+.footer .container ul li a {
+  text-decoration: none;
+  color: #AAAAAA;
+  font-size: 13px;
+}
+
+.footer .container a:hover {
+  border-bottom: 1px solid #AAAAAA;
+}
+
+.footer .container h4 {
+  color: white;
+  font-size: 16px;
+}

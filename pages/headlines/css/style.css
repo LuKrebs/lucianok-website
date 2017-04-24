@@ -1,0 +1,160 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/*  return button */
+a .return {
+  position: fixed;
+  width: 70px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 30%;
+  color: white;
+  background-color: rgb(34,18,73);
+  text-align: center;
+  border-radius: 5px; 
+  transition: 0.6s;
+}
+
+a .return  {
+  text-decoration: none;
+  color: white;
+}
+
+a .return p {
+  margin-top: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+}
+
+a .return:hover {
+  background-color: white;
+  color: rgb(34,18,73);
+}
+
+a .return:hover p span{
+  border-bottom: 1px solid rgba(34,18,73);
+  box-sizing: border-box;
+}
+
+/* finish return */
+
+/*Header*/
+
+.header {
+  margin-top: 25px;
+}
+
+.nav-tabs li a {
+  color: black;
+  margin-bottom: -4px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+  background-color: transparent;
+  margin-top: 100px;
+}
+
+.jumbotron h1 {
+  font-size: 50px;
+  text-shadow: none;
+  margin-bottom: 150px;
+}
+
+.jumbotron h1 span {
+  color: #ffc200;
+}
+
+/*Banner*/
+.banner {
+  background-color: #333;
+}
+
+.banner h1 {
+  margin-top: 30px;
+}
+
+.banner p {
+  margin-bottom: 40px;
+}
+
+.banner h1, .banner p {
+  color: white;
+}
+
+/*Cards*/
+.cards {
+  background-color: #FFC200;
+}
+
+.cards h2 {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.cards .container .expertise img {
+  margin-bottom: 35px;
+}
+
+/*Footer*/
+.footer {
+  color: white;
+  background-color: black;
+  height: 250px;
+  line-height: 240px;
+}
+
+.footer  address {
+  margin-top: 60px;
+}
+
+.footer  address i {
+  color: white;
+  margin-top: 15px;
+  margin-right: 8px;
+  padding: 5px 5px;
+}
+
+.footer  address a:hover i {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+
+@media (max-width: 992px) {
+  .col-md-4 {
+    margin: 0 auto 0;
+    text-align: center;
+    width: 100%;
+  }
+  .cards img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    text-align: center;
+  }
+
+  .nav li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .cards img {
+    width: 100%;
+  }
+}

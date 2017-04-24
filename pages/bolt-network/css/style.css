@@ -1,0 +1,218 @@
+html, body {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 970px;
+}
+
+/*  return button */
+a .return {
+  position: fixed;
+  width: 70px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 30%;
+  color: white;
+  background-color: rgb(34,18,73);
+  text-align: center;
+  border-radius: 5px; 
+  transition: 0.6s;
+}
+
+a .return  {
+  text-decoration: none;
+  color: white;
+}
+
+a .return p {
+  margin-top: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+}
+
+a .return:hover {
+  background-color: white;
+  color: rgb(34,18,73);
+}
+
+a .return:hover p span{
+  border-bottom: 1px solid rgba(34,18,73);
+  box-sizing: border-box;
+}
+
+/* finish return */
+
+/*jumbotron*/
+
+.jumbotron {
+  background-color: black;
+}
+
+.jumbotron .header p {
+  display: inline;
+  margin-right: 35px;
+  color: white;
+  font-size: 14px;
+}
+
+.jumbotron .header a {
+  text-decoration: none;
+  display: inline;
+  font-size: 14px;
+  color: #0393FF;
+  border: 1px solid #0393FF;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+.jumbotron .header a:hover {
+  color: white;
+  background-color: #0393FF;
+}
+
+.jumbotron .main h1 {
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.jumbotron .main a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0393FF;
+  border: 1px solid #0393FF;
+  border-radius: 2px;
+  padding: 8px 22px;
+}
+
+.jumbotron .main a:hover {
+  color: white;
+  background-color: #0393FF;
+}
+
+.jumbotron .main form {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.jumbotron .main input {
+  background-color: transparent;
+  width: 400px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.jumbotron .main input:hover {
+  border-bottom: 1px solid #0393FF;
+}
+
+.jumbotron .main input:focus {
+  box-shadow: none;
+}
+
+.jumbotron .main button {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0393FF;
+  border: 1px solid #0393FF;
+  border-radius: 2px;
+  padding: 8px 20px;
+  background-color: transparent;
+}
+
+.jumbotron .main button:hover {
+  color: white;
+  background-color: #0393FF;
+}
+
+/*supporting*/
+.supporting {
+  background-image: url("../img/diagmonds_@2X.png");
+  background-size: 141px 142px;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.supporting h2 {
+  color: #0393FF;
+  margin-top: 100px;
+}
+
+.supporting p {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.thumbnail {
+  background: transparent;
+  border: transparent;
+}
+
+.supporting .least {
+  margin-bottom: 80px;
+}
+
+.feature {
+  text-align: center;
+  background: url("../img/feature.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.feature .container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+}
+
+
+.feature h2 {
+  color: #0393FF;
+}
+
+.feature p {
+  color: white;
+  font-size: 16px;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #0393FF;
+  font-size: 14px;
+  margin: 1px 0 1px 0;
+}
+
+.footer a:hover {
+  border-bottom: 1px solid #0393FF;
+}
+
+.footer p {
+  margin: 2px 0 2px 0;
+}
+
+.footer h4 {
+  color: white;
+}

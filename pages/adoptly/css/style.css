@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*  return button */
+a .return {
+  position: fixed;
+  width: 70px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 30%;
+  color: white;
+  background-color: rgb(34,18,73);
+  text-align: center;
+  border-radius: 5px; 
+  transition: 0.6s;
+}
+
+a .return  {
+  text-decoration: none;
+  color: white;
+}
+
+a .return p {
+  margin-top: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+}
+
+a .return:hover {
+  background-color: white;
+  color: rgb(34,18,73);
+}
+
+a .return:hover p span{
+  border-bottom: 1px solid rgba(34,18,73);
+  box-sizing: border-box;
+}
+
+/* finish return */
+
+/*Header*/
+.header {
+  background-color: #30627E;
+}
+
+.header .container {
+  text-align: center;
+}
+
+.header .container ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header .container ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  float: left;
+  padding: 20px 15px;
+  margin-bottom: -15px;
+  margin-right: 25px;
+  margin-left: 0;
+}
+
+.header .container ul li a.active, .header .container ul li a:hover {
+    background-color: #E52364;
+    transition: 0.5s;
+}
+
+/*Jumbotron*/
+.jumbotron {
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+}
+
+.jumbotron .container h1 {
+  color: #E52364;
+}
+
+/*Supporting*/
+.supporting .container a {
+  text-decoration: none;
+  padding: 10px 80px;
+  border: 1px solid #98B1BF;
+  color: #333333;
+}
+
+.supporting .container a:hover {
+  background-color: rgba(152,177,191,0.5);
+  transition: 0.5s;
+}
+
+.supporting .container .two {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.footer {
+  background-color: #E52364;
+  height: 85px;
+  line-height: 75px;
+}
+
+.footer .container {
+  background-color: #E52364;
+}
+
+.footer .container a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .container p {
+  color: white;
+  vertical-align: middle;
+}
+
+.footer a:hover {
+  color: black;
+  transition: 0.7s;
+}
+
+@media (max-width: 500px) {
+  ul li {
+    width: 100%;
+  }
+}
