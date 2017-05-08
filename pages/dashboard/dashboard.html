@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="container-fluid">
+        <div class="pull-left">
+          <a href="#"><img src="img/logo.png" class="img-responsive"></a>
+        </div>
+        <div class="pull-right">
+          <div class="dropdown-header">
+            <button class="dropbtn-header">Relatórios</button>
+            <div class="dropdown-content-header">
+              <a href="pages/estatistica.html">Estatística</a>
+              <a href="pages/relatorios.html">Relatórios</a>
+            </div>
+          </div>
+          <div class="dropdown-header">
+            <button class="dropbtn-header">Configurações</button>
+            <div class="dropdown-content-header">
+              <a href="pages/perfil.html">Perfil</a>
+              <a href="pages/adm.html">Administração</a>
+              <a href="pages/maunal.html">Manual do Sistema</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--end: header --> 
+
+    <div class="data">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 text-center" id="idteste">
+            <h3>Análise do Fluxo de pessoas</h3> 
+            <img id="mychart" src="img/chart1correto.png" class="img-responsive"> 
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='date'><strong>Analise o movimento do seu estabelecimento:</strong></p>
+              </div>
+            </div>  
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a style="cursor: pointer;" onclick="changeChartTwo()"><li>Dia</li></a>
+                  <a style="cursor: pointer;" onclick="changeChart()"><li>Semana</li></a>
+                  <a style="cursor: pointer;" onclick="changeChartThree()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div>  
+          </div>
+          <div class="col-md-4 text-center" id="idtestetwo">
+            <h3 style="margin-left:-20px; ">Análise de Gênero</h3>
+            <img id="mypiechart" src="img/piechart1.png" class="img-responsive"> 
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='datetwo'><strong>Analise o gênero do seu público:</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a style="cursor: pointer;" onclick="changeChartPieOne()"><li>Dia</li></a>
+                  <a style="cursor: pointer;" onclick="changeChartPieTwo()"><li>Semana</li></a>
+                  <a style="cursor: pointer;" onclick="changeChartPieThree()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-4 text-center" id="idtestethree">
+            <h3>Análise de Emoções</h3>
+            <img id="mybarchart" src="img/barchart1.png" class="img-responsive"> 
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='datethree'><strong>Analise as emoções predominantes:</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a style="cursor: pointer;" onclick="changeChartBarOne()"><li>Dia</li></a>
+                  <a style="cursor: pointer;" onclick="changeChartBarTwo()"><li>Semana</li></a>
+                  <a style="cursor: pointer;" onclick="changeChartBarThree()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div> <!--end: data -->
+
+    <div class="data-two" id="middlecontainer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="text-center" id="second-container">Nível de Atratividade</h3>
+                <h4 class="text-center">Você está medindo a atratividade do produto <span id="dudalina">Camisa Dudalina</span></h4> 
+                <img src="img/barchartatratividade1.png" class="img-responsive" id="myattchart">
+              </div>
+            </div>  
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='datefour'><strong>Descubra o potencial do produto:</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a style="cursor: pointer;" onclick="changeChartAttOne()"><li>Dia</li></a>
+                  <a style="cursor: pointer;" onclick="changeChartAttTwo()"><li>Semana</li></a>
+                  <a style="cursor: pointer;" onclick="changeChartAttThree()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 id="second-second-container">Análise de Demografia</h3>
+                <h4>Descubra a faixa etária do seu público</h4>
+                <img src="img/barchartdemografia1.png" class="img-responsive" id="mydemochart">
+              </div>
+            </div>  
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='datefive'><strong>Analise as demografias predominantes:</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a onclick="changeChartDemoOne()"><li>Dia</li></a>
+                  <a onclick="changeChartDemoTwo()"><li>Semana</li></a>
+                  <a onclick="changeChartDemoThree()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div> <!--end: data-two -->
+
+    <div class="data-two" id="lastcontainer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="text-center" id="third-container">Análise de Gênero por Horário:</h3>
+                <img src="img/chartgenerohorariohoje.png" class="img-responsive" id="mygenhorchart">
+              </div>
+            </div>  
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='datesix'><strong>Descubra padrões de gênero em horários específicos</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a onclick="changeGenChartHoje()"><li>Dia</li></a>
+                  <a onclick="changeGenChartSemana()"><li>Semana</li></a>
+                  <a onclick="changeGenChartMes()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 id="third-third-container">Análise de Idade por Horário:</h3>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <img src="img/chartidadehorariocriancahoje.png" class="img-responsive" id="mydemochartone">
+                    <img src="img/chartidadehorarioadultohoje.png" class="img-responsive" id="mydemocharttwo">
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <img src="img/chartidadehorariojovemhoje.png" class="img-responsive" id="mydemochartthree">
+                    <img src="img/chartidadehorarioidosohoje.png" class="img-responsive" id="mydemochartfour">
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="row mov sec">
+              <div class="col-md-12 text-center">
+                <p id='dateseven'><strong>Descubra padrões de idade em horários específicos:</strong></p>
+              </div>
+            </div> 
+            <div class="row mov">
+              <div class="col-md-12 text-center">
+                <ul>
+                  <a onclick="changeAgeChartHoje()"><li>Dia</li></a>
+                  <a onclick="changeAgeChartSemana()"><li>Semana</li></a>
+                  <a onclick="changeAgeChartMes()"><li>Mês</li></a>
+                </ul>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div> <!--end: data-two -->
+
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="pull-left">
+          <p>YONFACE Tecnologia &copy 2017</p>
+        </div>
+      </div>
+    </div> <!--end: footer-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
